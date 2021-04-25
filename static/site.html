@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: #59A8FF;}
+h1   {color: #1C063F;}
+d1   {color: #1C063F;}
+</style>
+</head>
+<body>
+
+    <form action="http://127.0.0.1:5000/you", method = "POST">
+    <h1><font face = "Times New Roman" size = "6">Luminosity</font></h1>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">What is your household income?</font></d1>
+<br>
+<input type="radio" id="low" name="income" value="4">
+<label for="q">0-35K</label><br>
+<input type="radio" id="mid" name="income" value="3">
+<label for="q">36-105K</label><br>
+<input type="radio" id="high" name="income" value="2">
+<label for="q">106-250K</label><br>
+<input type="radio" id="super" name="income" value="1">
+<label for="q">above 250K</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How many people live in your household?</font></d1>
+<br>
+<input type="radio" id="low" name="ppl" value="1">
+<label for="q">1</label><br>
+<input type="radio" id="mid" name="ppl" value="2">
+<label for="q">2</label><br>
+<input type="radio" id="high" name="ppl" value="3">
+<label for="q">3 or 4</label><br>
+<input type="radio" id="super" name="ppl" value="4">
+<label for="q">above 5</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">What is your car’s fuel source?</font></d1>
+<br>
+<input type="radio" id="low" name="cFood" value="1">
+<label for="q">Electrical</label><br>
+<input type="radio" id="mid" name="cFood" value="2">
+<label for="q">Petroleum/Diesel</label><br>
+<input type="radio" id="high" name="cFood" value="3">
+<label for="q">Ethanol</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How much time do you spend in the shower?</font></d1>
+<br>
+<input type="radio" id="low" name="shower" value="1">
+<label for="q">0-5 min</label><br>
+<input type="radio" id="mid" name="shower" value="2">
+<label for="q">6-9 min</label><br>
+<input type="radio" id="high" name="shower" value="3">
+<label for="q">10-20 min</label><br>
+<input type="radio" id="super" name="shower" value="4">
+<label for="q">20 min or above</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How much water do you use on a monthly basis?</font></d1>
+<br>
+<input type="radio" id="low" name="water" value="1">
+<label for="q">0-3,500 gallons</label><br>
+<input type="radio" id="mid" name="water" value="2">
+<label for="q">3,600-7,200 gallons</label><br>
+<input type="radio" id="high" name="water" value="3">
+<label for="q">7,300-12,000 gallons</label><br>
+<input type="radio" id="super" name="water" value="4">
+<label for="q">12,500 gallons or above</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">What type of stove do you use regularly?</font></d1>
+<br>
+<input type="radio" id="low" name="stove" value="1">
+<label for="q">Electrical</label><br>
+<input type="radio" id="mid" name="stove" value="2">
+<label for="q">Gas</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How long do you leave the lights on in a day(on average)?</font></d1>
+<br>
+<input type="radio" id="low" name="light" value="1">
+<label for="q">0-4 hours</label><br>
+<input type="radio" id="mid" name="light" value="2">
+<label for="q">5-8 hours</label><br>
+<input type="radio" id="high" name="light" value="3">
+<label for="q">9-14 hours</label><br>
+<input type="radio" id="super" name="light" value="4">
+<label for="q">15 hours or above</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How often do you leave screens on without using them?</font></d1>
+<br>
+<input type="radio" id="low" name="screen" value="1">
+<label for="q">0 times a day</label><br>
+<input type="radio" id="mid" name="screen" value="2">
+<label for="q">1 or 2 times a day</label><br>
+<input type="radio" id="high" name="screen" value="3">
+<label for="q">3-5 times a day</label><br>
+<input type="radio" id="super" name="screen" value="4">
+<label for="q">6 times or over</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How long do you typically leave them on?</font></d1>
+<br>
+<input type="radio" id="low" name="time" value="1">
+<label for="q">0-5 min</label><br>
+<input type="radio" id="mid" name="time" value="2">
+<label for="q">6-15 min</label><br>
+<input type="radio" id="high" name="time" value="3">
+<label for="q">16-60 min</label><br>
+<input type="radio" id="super" name="time" value="4">
+<label for="q">Over 60 min</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">Do you own a smart thermostat?</font></d1>
+<br>
+<input type="radio" id="low" name="therm" value="1">
+<label for="q">Yes</label><br>
+<input type="radio" id="mid" name="therm" value="2">
+<label for="q">No</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">How often do you change the temperature in your home?</font></d1>
+<br>
+<input type="radio" id="low" name="temp" value="1">
+<label for="q">1 or 2 times</label><br>
+<input type="radio" id="mid" name="temp" value="2">
+<label for="q">3-4 times</label><br>
+<input type="radio" id="high" name="temp" value="3">
+<label for="q">5 or over</label><br>
+<br>
+
+<d1><font face = "Times New Roman" size = "4">What is your source of electricity to your home?</font></d1>
+<br>
+<input type="radio" id="low" name="e" value="1">
+<label for="q">ComEd or other electrical companies</label><br>
+<input type="radio" id="mid" name="e" value="2">
+<label for="q">Solar panels or other renewable sources of energy</label><br>
+<br>
+<button type = "submit">
+    submit
+</button>
+</form>
+</body>
+</html>
+
+
